@@ -89,14 +89,16 @@ export function Form({categories} : Props){
                     <UploadCloud size={30} color="#FFF"/>
                 </span>
 
-            <input type="file"
+            <input 
+            type="file"
             accept="image/png, image/jpg"
             required
             onChange={handleFile}
             />
+
             {previewImage && (
             <Image
-                alt='Imagem de preview'
+                alt="Imagem de preview"
                 src={previewImage}
                 className={styles.preview}
                 fill={true}
